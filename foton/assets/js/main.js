@@ -47455,13 +47455,15 @@ $(document).ready(function () {
 	});
 });
 
-//бегущие цыфры, skills
-var $win = $(window);
-var $marker = $('.timer');
-$win.scroll(function () {
-	if ($win.scrollTop() + $win.height() >= $marker.offset().top) {
+////бегущие цыфры, skills
+$(document).ready(function () {
+	var $win = $(window);
+	var $marker = $('.timer');
+	$win.scroll(function () {
+		if ($win.scrollTop() + $win.height() >= $marker.offset().top) {
 
-		$('.timer').countTo();
+			$('.timer').countTo();
 
-	}
+		}
+	});
 });
