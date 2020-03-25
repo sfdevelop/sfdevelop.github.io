@@ -13532,6 +13532,20 @@ h3 {
     color: #e91a00;
 }
 
+input {
+    background: #333;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+textarea {
+    background: #333;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
 @media (max-width: 992px) {
     .logo {
         max-width: 100px;
@@ -13565,6 +13579,14 @@ h3 {
 
     .history h5 {
         font-size: 20px !important;
+    }
+
+    .contact h2 {
+        font-size: 35px;
+    }
+
+    .production h2 {
+        font-size: 35px;
     }
 }
 
@@ -13756,4 +13778,53 @@ footer .small a {
 
 .design a:hover {
     text-decoration: none;
+}
+
+.color ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.color ul li {
+    list-style: none;
+}
+
+.color ul li a {
+    color: #333;
+}
+
+.contact {
+    padding-top: 150px;
+    background: #333333;
+    color: #fff;
+}
+
+.contact ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.contact ul li {
+    list-style: none;
+}
+
+.contact .socio a {
+    color: #fff;
+}
+
+.production input,
+.production textarea {
+    background: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+.production .btn {
+    color: #333;
+    border-color: #333;
+}
+
+.production .btn:hover {
+    background: #333;
+    color: #fff;
 }
