@@ -22595,6 +22595,22 @@ $(document).ready(function () {
 	});
 });
 
+//слайдер в галерее
+$(document).ready(function () {
+	$('.item_slider').slick({
+		infinite: true,
+		pauseOnHover: false,
+		slidesToShow: 1,
+		arrows: false,
+		autoplay: true,
+		arrows: true,
+		autoplaySpeed: 4000,
+		slidesToScroll: 1,
+		prevArrow: "<div class='slick-prev'><i class='fas fa-chevron-left'></i></div>",
+		nextArrow: "<div class='slick-next'><i class='fas fa-chevron-right'></i></div>",
+	});
+});
+
 //Крепим меню при прокрутке
 $(document).ready(function () {
 
