@@ -13695,11 +13695,22 @@ input {
     color: #333;
 }
 
+input:focus {
+    outline: none !important;
+}
+
 textarea {
     background: #fff;
     border: none;
     border-bottom: 1px solid #333;
     color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
 }
 
 .fancybox-active {
@@ -14687,6 +14698,10 @@ textarea {
     background: blue;
 }
 
+.menu .dropdown-menu .dropdown-item:hover {
+    background: #f0f0f0;
+}
+
 .m-top {
     margin-top: 150px;
 }
@@ -14697,7 +14712,6 @@ textarea {
 
 header {
     height: 100vh;
-    background-image: url(../i/header.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14744,6 +14758,11 @@ header h1 {
 
 .menu .navbar .nav-link {
     color: #333 !important;
+    margin-left: 15px;
+}
+
+.menu .dropdown-toggle::after {
+    display: none;
 }
 
 .slider .slider_img {
@@ -14938,4 +14957,42 @@ footer .small a {
 .slick-prev i {
     color: #333;
     font-size: 50px;
+}
+
+#p_prldr {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 30;
+}
+
+.contpre small {
+    font-size: 25px;
+}
+
+.contpre {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#p_prldr .svg_anm {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../i/preloader.gif) center center no-repeat;
+    background-size: 300px;
+    margin: -16px 0 0 -16px;
 }
